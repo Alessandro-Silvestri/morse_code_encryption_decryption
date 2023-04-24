@@ -25,7 +25,7 @@ def text_to_morse(text: str):
         print(MORSE_CODE_DICT[i])
 
 def morse_to_text(morse_input: str):
-    ''' Converting morse to and check a valid input'''
+    ''' Converting morse to text and checking the valid input'''
     text = ''
     morse_input = morse_input.split(' ')
     for i in morse_input:
