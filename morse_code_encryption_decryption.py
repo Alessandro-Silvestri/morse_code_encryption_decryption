@@ -1,8 +1,8 @@
 '''
 MORSE CODE ENCRIPTION DECRIPTION
 
-Software for translating text to Morse code and vicevera.
-The program understand if you insert a text or a morse code and it checks if you insert a wrong morse code.
+Software for translating text to Morse code and vice versa.
+The program understands if you insert a text or a morse code.
 Enjoy! :)
 Made by Alessandro Silvestri 2023 <alessandro.silvestri.work@gmail.com>
 '''
