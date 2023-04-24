@@ -14,8 +14,8 @@ MORSE_CODE_DICT = { 'A':'.-', 'B':'-...', 'C':'-.-.', 'D':'-..', 'E':'.',
 'U':'..-', 'V':'...-', 'W':'.--', 'X':'-..-', 'Y':'-.--',
 'Z':'--..', '1':'.----', '2':'..---', '3':'...--', '4':'....-',
 '5':'.....', '6':'-....', '7':'--...', '8':'---..', '9':'----.',
-'0':'-----', ',':'--..--', '.':'.-.-.-', '?':'..--..', '/':'-..-.',
-'-':'-....-', '(':'-.--.', ')':'-.--.-', ' ':''}
+'0':'-----', '!':'-.-.--', ',':'--..--', '.':'.-.-.-', '?':'..--..', '/':'-..-.',
+'-':'-....-', '(':'-.--.', ')':'-.--.-', ' ':'', '\'':'.----.', ':':'---...', '  ':' '}
 morse_values = list(MORSE_CODE_DICT.values())
 morse_keys = list(MORSE_CODE_DICT.keys())
 
@@ -46,7 +46,10 @@ def check_input(txt_input: str):
             break
     return is_morse
 
-quest = input('insert text or morse (if it is morse use the spaces between the morse values): ')
+quest = input('''
+insert text or morse (if it is morse use the spaces between the morse values):
+insert double for separating the words:
+-------> ''')
 if check_input(quest):
     morse_to_text(quest)
 else:
